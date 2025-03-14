@@ -12,17 +12,21 @@ Genres and sub-genres of popular music indicate that there is a degree of simila
 ### Analysis approach
 
 1. Clean data using NLP techniques and balance the data
+   
 2. Transform lyrics into numeric vectors using the following methods:
    - Bag of words
    - Term Frequency-Inverse Document Frequency (TF-IDF)
    - creating a word embedding from the corpus of all lyrics using Word2Vec
    - using embedding vectors from the word2vec Google News 300 (pruned) model
+     
 3. Scale features to ensure they can be used in all classifier algorithms
+   
 4. Four multiclass classifier models are trained on the features of (2):
    - multinomial Naive Bayes model with Laplace smoothing (= baseline model)
    - random forest model
    - linear support vector machine model
    - fastText (on non-transfomed data)
+     
 5. Evaluation of each model on the metrics of:
    - Overall accuracy
    - Individual genre accuracy
