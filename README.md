@@ -4,26 +4,35 @@
 
 Genres and sub-genres of popular music indicate that there is a degree of similarity in the songs assigned to them. Currently Spotify does not use lyrics in their algorithms for determining a song's genre (Boonyanit et al, 2021). Instead it considers audio type metrics such as 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo' and 'duration_ms' derived from meta data. Song classifications can play a key part in content-based filtering recommendation engines. As it's easy to deduce that for some genres its lyrical content can differ significantly, e.g. country music versus rap or heavy metal, this project aims to see if lyrics alone can be an effective classifier of songs. If so, lyrics could be a consideration for inclusion to current recommendation algorithms.
 
-1. Test if the lyics of a song alone are a good predictor of its genre
+1. Test if the lyics of a song alone are a good predictor of its genre using different techniques for feature representation and classifier algorithms
 
 2. Summarise possible setbacks and potential areas of improvement with the approaches undertaken
 
 
 ### Analysis approach
 
-Using PySpark, PySpark SQL and Python where appropriate in a Jupyter Notebook to:
-1. Create a Spark session on an available Cluster and upload the data onto Hadoop Distributed File System
-2. Convert the data into a dataframe ahead of analysis and undertake a data audit and exploratory data analysis to gain insights on the main features
-3. Clean and transform the data as required and build new features
-4. Use Spark ML to create transformers and estimators to build predictive models
-5. Create pipelines to find the best predictive model using different algorithms, different number of input features and hyperparameter tuning
-6. Contemplate what extra steps could make the final model better
+1. Clean data using NLP techniques and balance the data
+2. Transform lyrics into numeric vectors using the following methods:
+   - Bag of words
+   - Term Frequency-Inverse Document Frequency (TF-IDF)
+   - creating a word embedding from the corpus of all lyrics using Word2Vec
+   - using embedding vectors from the word2vec Google News 300 (pruned) model
+3. Scale features to ensure they can be used in all classifier algorithms
+4. Four multiclass classifier models are trained on the features of (2):
+   - multinomial Naive Bayes model with Laplace smoothing (= baseline model)
+   - random forest model
+   - linear support vector machine model
+   - fastText (on non-transfomed data)
+5. Evaluation of each model on the metrics of:
+   - Overall accuracy
+   - Individual genre accuracy
+   - Individual genre precision, recall and F1 score
+   - One vs rest scenario
 
-cf. code 'stem-jobs-salary-prediction.ipynb'
+cf. code 'pred_song_genre_from_lyrics.ipynb'
 
 ### Results/findings
 
-- The best model was a Gradient Boosted Trees (GBT) regressor model which explained 64% of the variance and had a high RMSE
-- To improve the model tried re-training the GBT regressor over various numbers of features (10, 20, 30,...) using feature importance rankings and tuning the hyperparameters of each using grid search and Spark ML CrossValidator. This increased the explained variance by 0.5 percentage points
-- The top features in terms of feature importance were generally intuitive. For example 'years of experience', 'years at company', job titles involving 'software engineering', place of work being 'Google', tag of 'AI/ML', holding a 'PhD' are all significant drivers of higher remuneration. However, a counter intuitive finding was the work 'location' outside of California having a higher feature ranking than 'location' of California. The features of 'race' and 'gender' are quite low in the feature importance rankings.
 
+
+Reference: Boonyanit, A. and Dahl, A., _Music Genre Classification using Song Lyrics_, 2021, found at: https://web.stanford.edu/class/cs224n/reports/final_reports/report003.pdf
