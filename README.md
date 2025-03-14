@@ -41,6 +41,23 @@ cf. code 'pred_song_genre_from_lyrics.ipynb'
 
 ### Results/findings
 
+- In terms of accuracy, precision, recall scores and F1 scores, random forest using BoW and TF-IDF vectors and FastText on raw data perfomed the best. NBs performance was poor with LSVM being even poorer
+
+- In terms of feature inputs the word embeddings did not perform as well as expected which may be a result of their inability to vectorize many of the artificial and rare words used in pop songs - in particular for the pretrained Google News 300 word embeddings. BoWs and TF-IDF features consider all words in the corpus so do not lose any words in vectorization. Fasttext may have performed well due to its ability to deal with rare unseen words through its creation of subword n-gram. 
+
+- FastTest could be considered the best model as its evaluation metrics are strongest across the largest four genres (when unbalanced)
+
+- Compared to the baseline model, FastTest performed noticeably better
+
+- It is difficult to find comparable baselines in available in research papers due to the differences in objective such as multi-label genre vs multi-class genre and data sources such as differences in datasets, genre definitions and number of genres studied
+
+- Improvements on the approach undertaken could be to consider:
+  - increasing the number of stop words
+  - move towards n-grams being studied
+  - incorporating word tagging (noun, det, adv, etc)
+  - extending the context windows in CBOW/Skip-Gram methodologies in word embeddings; and
+  - if feeling brave building an embedding from scratch using LSTM deep learning incorporating sequences
+  - Also, the re-balancing did not seem to provide an increase in performance so further investigation here is required
 
 
 Reference: Boonyanit, A. and Dahl, A., _Music Genre Classification using Song Lyrics_, 2021, found at: https://web.stanford.edu/class/cs224n/reports/final_reports/report003.pdf
