@@ -2,7 +2,11 @@
 
 ### Project objectives
 
-Genres and sub-genres of popular music indicate that there is a degree of similarity in the songs assigned to them. Currently Spotify does not use lyrics in their algorithms for determining a song's genre (Boonyanit et al, 2021). Instead it considers audio type metrics such as 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo' and 'duration_ms' derived from meta data. Song classifications can play a key part in content-based filtering recommendation engines. As it's easy to deduce that for some genres its lyrical content can differ significantly, e.g. country music versus rap or heavy metal, this project aims to see if lyrics alone can be an effective classifier of songs. If so, lyrics could be a consideration for inclusion to current recommendation algorithms.
+Genres and sub-genres of popular music indicate that there is a degree of similarity in the songs assigned to them and thus they can play a key part in content-based filtering recommendation engines. 
+
+Currently Spotify does not use lyrics in their algorithms for determining a song's genre (Boonyanit et al, 2021) and instead it considers audio type metrics such as 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo' and 'duration_ms' derived from meta data. 
+
+As it's easy to deduce lyrical differences between some genres e.g. country music versus rap or heavy metal, this project aims to see if lyrics alone can be an effective classifier of songs. If so, lyrics could be a consideration for inclusion to current recommendation algorithms. The objectives thus can be summarised as:
 
 1. Test if the lyics of a song alone are a good predictor of its genre using different techniques for feature representation and classifier algorithms
 
