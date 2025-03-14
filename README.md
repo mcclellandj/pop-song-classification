@@ -2,12 +2,9 @@
 
 ### Project objectives
 
-Genres and sub-genres of popular music indicate that there is a degree of similarity in the songs assigned to them. Currently Spotify does not use lyrics in their algorithms for determining a song's genre (Boonyanit et al, 2021). Instead it considers audio type metrics such as 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo' and 'duration_ms' derived from meta data. As genre and sub-genre play a key part in content-based filtering recommendation engines it is important that songs are categorised as best as possible. As it's easy to deduce that for some genres its lyrical content can differ significantly, e.g. country music versus rap or heavy metal, this project aims to see if lyrics alone can be an effective classifier of songs. If so, lyrics could be a consideration for inclusion to current recommendation algorithms.
+Genres and sub-genres of popular music indicate that there is a degree of similarity in the songs assigned to them. Currently Spotify does not use lyrics in their algorithms for determining a song's genre (Boonyanit et al, 2021). Instead it considers audio type metrics such as 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo' and 'duration_ms' derived from meta data. Song classifications can play a key part in content-based filtering recommendation engines. As it's easy to deduce that for some genres its lyrical content can differ significantly, e.g. country music versus rap or heavy metal, this project aims to see if lyrics alone can be an effective classifier of songs. If so, lyrics could be a consideration for inclusion to current recommendation algorithms.
 
 1. Test if the lyics of a song alone are a good predictor of its genre
-
-  - If a model can be built which shows reasonable statistical power above a set baseline then the work could provide input into other genre tagging projects which do not use lyrics
-  - Lyrics may provide some uplift in existing models which in turn may lead to improved performance for recommendation systems using genre
 
 2. Summarise possible setbacks and potential areas of improvement with the approaches undertaken
 
