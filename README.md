@@ -1,4 +1,4 @@
-## Predicting a pop song's genre from its lyrics
+## Using lyrics to classify a pop song
 
 <table>
   <tr>
