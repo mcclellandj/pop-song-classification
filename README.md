@@ -4,17 +4,17 @@
   <tr>
     <td>
       <figure>
-        <img src="images/eda1.png" width="200">
+        <img src="images/eda1.png" width="400">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="images/eda2.png" width="200">
+        <img src="images/eda2.png" width="400">
       </figure>
     </td>
     <td>
       <figure>
-        <img src="images/fasttext.png" width="200">
+        <img src="images/fasttext.png" width="400">
       </figure>
     </td>
   </tr>
