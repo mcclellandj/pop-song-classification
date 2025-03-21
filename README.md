@@ -67,7 +67,7 @@ cf. code 'pred_song_genre_from_lyrics.ipynb'
 
 ### Results/findings
 
-- In terms of the evaluation metrics, fastText on raw data and RF using BoW and TF-IDF vectors perfomed the best. NBs performance was poor with LSVM being even poorer. FastTest can be considered the best model as its evaluation metrics are highest across the largest four genres (when unbalanced)
+- In terms of the evaluation metrics, fastText on raw data and RF using BoW and TF-IDF vectors perfomed the best. NBs performance was poor with LSVM being even poorer. FastText can be considered the best model as its evaluation metrics are highest across the largest four genres (when unbalanced)
 
 - In terms of feature inputs the pre-trained word embedding did not perform as well as expected which may be due to its ability to vectorize many of the artificial and rare words used in pop songs and maybe the vocabulary of the Google News 300 word embedding model is not the best choice. This is a a key challenge found in this project. While BoWs and TF-IDF features do not consider word context they did at least vectorize all the words in the lyics corpus. fastText may have performed best due to its ability to deal with rare unseen words through its creation of subword n-grams
 
