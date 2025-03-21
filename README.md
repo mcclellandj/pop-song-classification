@@ -1,6 +1,6 @@
 ## Text classification : Predicting a pop song's genre from its lyrics
 
-![Image 1](song_stats.png)  
+![Image 1](images/song_stats.png)  
 
 ### Project objectives
 
@@ -59,8 +59,6 @@ cf. code 'pred_song_genre_from_lyrics.ipynb'
   - extending the context windows in CBOW/Skip-Gram methodologies in word embeddings; and
   - if feeling brave building an embedding from scratch using LSTM deep learning to consider word sequences
 
+![Image 2](images/confusion_matrices.png)  
 
 Reference: Boonyanit, A. and Dahl, A., _Music Genre Classification using Song Lyrics_, 2021, found at: https://web.stanford.edu/class/cs224n/reports/final_reports/report003.pdf
-
-
-![Image 2](confusion_matrices.png)  
