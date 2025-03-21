@@ -1,5 +1,7 @@
 ## Text classification : Predicting a pop song's genre from its lyrics
 
+![Image 1](song_stats.png)  
+
 ### Project objectives
 
 Genres and sub-genres of popular music indicate that there is a degree of similarity in the songs assigned to them and thus they can play a key part in content-based filtering recommendation engines. 
