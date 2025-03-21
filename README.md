@@ -1,4 +1,4 @@
-## Text classification : Predicting a pop song's genre from its lyrics
+## Predicting a pop song's genre from its lyrics
 
 ![Image 1](images/song_stats.png)  
 
