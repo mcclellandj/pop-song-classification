@@ -14,14 +14,14 @@
     </td>
     <td>
       <figure>
-        <img src="images/confusion_matrices.png" width="200">
+        <img src="images/fasttext.png" width="200">
       </figure>
     </td>
   </tr>
     <tr>
     <th>Distribution of songs by genre</th>
     <th>Distribution of songs by number of words</th>
-    <th>Confusion matrix</th>
+    <th>Confusion matrix - fastText</th>
   </tr>
 </table>
 
