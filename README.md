@@ -61,3 +61,6 @@ cf. code 'pred_song_genre_from_lyrics.ipynb'
 
 
 Reference: Boonyanit, A. and Dahl, A., _Music Genre Classification using Song Lyrics_, 2021, found at: https://web.stanford.edu/class/cs224n/reports/final_reports/report003.pdf
+
+
+![Image 2](confusion_matrices.png)  
