@@ -1,6 +1,29 @@
 ## Predicting a pop song's genre from its lyrics
 
-
+<table>
+  <tr>
+    <td>
+      <figure>
+        <img src="images/eda1.png" width="200">
+      </figure>
+    </td>
+    <td>
+      <figure>
+        <img src="images/eda2.png" width="200">
+      </figure>
+    </td>
+    <td>
+      <figure>
+        <img src="images/confusion_matrices.png" width="200">
+      </figure>
+    </td>
+  </tr>
+    <tr>
+    <th>Distribution of songs by genre</th>
+    <th>Distribution of songs by number of words</th>
+    <th>Confusion matrix</th>
+  </tr>
+</table>
 
 ![Image 2](images/confusion_matrices.png)  
 
