@@ -19,8 +19,8 @@
     </td>
   </tr>
     <tr>
-    <th>Distribution of songs by genre</th>
-    <th>Distribution of songs by number of words</th>
+    <th>Distn. of songs by genre</th>
+    <th>Distn. of songs by no. of words</th>
     <th>fastText confusion matrix</th>
   </tr>
 </table>
