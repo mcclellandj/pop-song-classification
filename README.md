@@ -2,20 +2,14 @@
 
 <table>
   <tr>
-    <td>
-      <figure>
-        <img src="images/eda1.png" width="400" style="vertical-align: top;">
-      </figure>
+    <td style="vertical-align: top;">
+      <img src="images/eda1.png" width="400">
     </td>
-    <td>
-      <figure>
-        <img src="images/eda2.png" width="400" style="vertical-align: top;">
-      </figure>
+    <td style="vertical-align: top;">
+      <img src="images/eda2.png" width="400">
     </td>
-    <td>
-      <figure>
-        <img src="images/fasttext.png" width="400" style="vertical-align: top;">
-      </figure>
+    <td style="vertical-align: top;">
+      <img src="images/fasttext.png" width="400">
     </td>
   </tr>
   <tr>
