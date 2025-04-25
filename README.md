@@ -2,19 +2,19 @@
 
 <table>
   <tr>
-    <td style="vertical-align: top;">
+    <td>
       <figure>
-        <img src="images/eda1.png" width="400">
+        <img src="images/eda1.png" width="400" style="vertical-align: top;">
       </figure>
     </td>
-    <td style="vertical-align: top;">
+    <td>
       <figure>
-        <img src="images/eda2.png" width="400">
+        <img src="images/eda2.png" width="400" style="vertical-align: top;">
       </figure>
     </td>
-    <td style="vertical-align: top;">
+    <td>
       <figure>
-        <img src="images/fasttext.png" width="400">
+        <img src="images/fasttext.png" width="400" style="vertical-align: top;">
       </figure>
     </td>
   </tr>
