@@ -20,7 +20,7 @@
   </tr>
     <tr>
     <th>Distribution of songs by genre</th>
-    <th>Distribution of songs by no. of words</th>
+    <th>Distribution of songs by number of words</th>
     <th style="width: 25%; padding: 10px;">fastText<br>confusion matrix</th>
   </tr>
 </table>
