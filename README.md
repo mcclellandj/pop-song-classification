@@ -19,7 +19,7 @@
     </td>
   </tr>
     <tr>
-    <th>Distribution of songs by genre</th>
+    <th style="width: 25%; padding: 10px;">Distribution of songs<br>by genre</th>
     <th>Distribution of songs by number of words</th>
     <th style="width: 25%; padding: 10px;">fastText<br>confusion matrix</th>
   </tr>
