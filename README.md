@@ -1,33 +1,29 @@
 ## Using lyrics to classify a pop song
 
-<style>
-  table td {
-    vertical-align: top !important;
-  }
-  table img {
-    display: block;
-  }
-</style>
-
 <table>
   <tr>
     <td>
-      <img src="images/eda1.png" width="400">
+      <figure>
+        <img src="images/eda1.png" width="400">
+      </figure>
     </td>
     <td>
-      <img src="images/eda2.png" width="400">
+      <figure>
+        <img src="images/eda2.png" width="400">
+      </figure>
     </td>
     <td>
-      <img src="images/fasttext.png" width="400">
+      <figure>
+        <img src="images/fasttext.png" width="400">
+      </figure>
     </td>
   </tr>
-  <tr>
+    <tr>
     <th style="width: 25%; padding: 10px;">Distribution of songs<br>by genre</th>
     <th style="width: 25%; padding: 10px;">Distribution of songs<br>by number of words</th>
     <th style="width: 25%; padding: 10px;">fastText<br>confusion matrix</th>
   </tr>
 </table>
-
 
 ### Project objectives
 
