@@ -1,14 +1,23 @@
 ## Using lyrics to classify a pop song
 
+<style>
+  table td {
+    vertical-align: top !important;
+  }
+  table img {
+    display: block;
+  }
+</style>
+
 <table>
   <tr>
-    <td style="vertical-align: top;">
+    <td>
       <img src="images/eda1.png" width="400">
     </td>
-    <td style="vertical-align: top;">
+    <td>
       <img src="images/eda2.png" width="400">
     </td>
-    <td style="vertical-align: top;">
+    <td>
       <img src="images/fasttext.png" width="400">
     </td>
   </tr>
@@ -18,6 +27,7 @@
     <th style="width: 25%; padding: 10px;">fastText<br>confusion matrix</th>
   </tr>
 </table>
+
 
 ### Project objectives
 
